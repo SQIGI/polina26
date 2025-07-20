@@ -300,6 +300,12 @@ blockquote.visible {
   white-space: nowrap;
   border-right: 0.15em solid #ff89e9;
   animation: blinkCursor 0.8s step-end infinite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  white-space: normal !important; /* вот ключевой момент */
+  word-break: break-word;
+  text-align: center;
 }
 
 @keyframes blinkCursor {
